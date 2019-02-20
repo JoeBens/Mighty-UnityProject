@@ -38,7 +38,7 @@ ExportedObj/
 *.txt
 *.txt.meta
 /Ferr/*
-
+Ferr/*
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
