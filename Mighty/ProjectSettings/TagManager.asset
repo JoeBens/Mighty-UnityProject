@@ -9,6 +9,7 @@ TagManager:
   - PlayerHitbox
   - pushable
   - PressurePadActivator
+  - GM
   layers:
   - Default
   - TransparentFX
@@ -30,8 +31,8 @@ TagManager:
   - Pushable
   - PushableActivators
   - Loot
-  - 
-  - 
+  - Checkpoint
+  - GM
   - 
   - 
   - 

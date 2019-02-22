@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStat : MonoBehaviour, IDamageable {
 
@@ -44,6 +45,10 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         if (Health > health)
             Health = health;
         if (Health <= 0)
+        {
             Health = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+            
     }
 }
