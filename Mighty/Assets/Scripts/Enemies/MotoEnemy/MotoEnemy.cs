@@ -7,7 +7,7 @@ public class MotoEnemy : MeleeEnemy, IDamageable
     public int Health { get; set; }
 
     // Use this for initialization
-    bool notAtEdge;
+    
 
     public override void Init()
     {
@@ -23,8 +23,9 @@ public class MotoEnemy : MeleeEnemy, IDamageable
     {
         //Voir si l'ennemi est près d'un bord
         notAtEdge = Physics2D.OverlapCircle(edgeCheck.position, groundCheckRadius, whatIsGround);
+        hittingWall = Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, whatIsGround);
         //si l'ennemi atteint un bord, il changera sa direction
-        if (!notAtEdge)
+        if (hittingWall || !notAtEdge)
             isFacingRight = !isFacingRight;
 
         if (isFacingRight)
@@ -53,8 +54,8 @@ public class MotoEnemy : MeleeEnemy, IDamageable
 
         if (Health <= 0)
         {
+            SpawnGems();
             Destroy(this.gameObject);
-
         }
     }
 

@@ -22,6 +22,7 @@ public class DragonWarrior : MeleeEnemy, IDamageable
         if (Health <= 0)
         {
             anim.SetTrigger("Death");
+            SpawnGems();
             Destroy(this.gameObject, 0.5f);
 
         }

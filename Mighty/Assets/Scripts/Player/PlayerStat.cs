@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour, IDamageable {
 
-    [SerializeField]
-    private int health;
+    
+    public int health;
 
     private Animator anim;
+
+    public int howManyGems;
 
     public int Health{ get; set; }
     // Use this for initialization
@@ -36,6 +38,12 @@ public class PlayerStat : MonoBehaviour, IDamageable {
 
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        Debug.Log("Gems: " + this.howManyGems);
+        Debug.Log("Health: " + this.Health);
+
+        if (Health > health)
+            Health = health;
+        if (Health <= 0)
+            Health = 0;
+    }
 }

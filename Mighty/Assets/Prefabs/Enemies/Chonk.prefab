@@ -33,6 +33,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1118969982445792
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4788512762515742}
+  m_Layer: 11
+  m_Name: wallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1564673862362278
 GameObject:
   m_ObjectHideFlags: 1
@@ -92,6 +107,7 @@ Transform:
   m_Children:
   - {fileID: 4805234981902600}
   - {fileID: 4799208945925268}
+  - {fileID: 4788512762515742}
   m_Father: {fileID: 4648644660723848}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,12 +118,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948820438401858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.790718, y: 0.880208, z: 0.07081374}
+  m_LocalPosition: {x: 31.36, y: 1.24, z: 0.07081374}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4533397503115448}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4788512762515742
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118969982445792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.72, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4533397503115448}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4799208945925268
 Transform:
@@ -279,6 +308,11 @@ MonoBehaviour:
   health: 70
   coins: 0
   speed: 2.72
+  gems:
+  - {fileID: 1022402225823260, guid: 19e2f1c3663d4154dab5cbd32882976f, type: 2}
+  - {fileID: 1022402225823260, guid: de2406f31e9876946b645704528b579c, type: 2}
+  - {fileID: 1022402225823260, guid: 48787ecb6fe10ca4da561c19cdff3d04, type: 2}
+  - {fileID: 1281880038761170, guid: 63803c7ffe7153b4cbe63593e5da04ed, type: 2}
   isFacingRight: 0
   isHit: 0
   groundCheckRadius: 0.431
@@ -286,6 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   edgeCheck: {fileID: 4805234981902600}
+  wallCheck: {fileID: 4788512762515742}
 --- !u!212 &212620573389931812
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212819811660098544}
   - component: {fileID: 60729990338846888}
   - component: {fileID: 114740330133774128}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: spikes_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 212698748364205828}
   - component: {fileID: 60634612377579220}
   - component: {fileID: 114738508069883060}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: spikes_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 212471849676054938}
   - component: {fileID: 60126249790993598}
   - component: {fileID: 114217732135395558}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: spikes_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4193248411743156}
   - component: {fileID: 210412930694574468}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}

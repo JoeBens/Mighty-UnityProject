@@ -37,6 +37,8 @@ public class FlyingEnemy : MeleeEnemy,IDamageable{
 
         if (Health <= 0)
         {
+
+            SpawnGems();
             Destroy(this.gameObject);
 
         }

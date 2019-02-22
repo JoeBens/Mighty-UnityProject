@@ -9,6 +9,9 @@ public abstract class MeleeEnemy : MonoBehaviour {
     [SerializeField]
     protected float speed;
 
+    [SerializeField]
+    private GameObject[] gems;
+
     protected Animator anim;
     protected SpriteRenderer enemySR;
     [SerializeField]
@@ -22,12 +25,14 @@ public abstract class MeleeEnemy : MonoBehaviour {
     protected float distance; //distance entre l'ennemi et le joueur
     private Vector3 smoothVelocity = Vector3.zero;
     private float moveVelocity;
-    //public bool moveRight;// will use this variable to tell the enemy that must change its move direction.
-    [Range(0.0f, 1.0f)]           // Wall Check radius Slide Bar.
-    public float groundCheckRadius = 0.1f;// This determines the space between the enemy Collider and the walls.
+    
+    [Range(0.0f, 1.0f)]           
+    public float groundCheckRadius = 0.1f;
     public LayerMask whatIsGround;// We use this layer mask to tell the enemy what is a wall and what is not.
-    private bool notAtEdge; // this determines if the enemy has reached an edge.
+    protected bool notAtEdge; // this determines if the enemy has reached an edge.
+    protected bool hittingWall;
     public Transform edgeCheck;// This object is placed in front of the enemy and is used to know when its reaching an edge.
+    public Transform wallCheck;// This object is placed in front of the enemy and is used to know when its reaching an edge.
 
     protected Vector3 direction;
 
@@ -45,7 +50,7 @@ public abstract class MeleeEnemy : MonoBehaviour {
     }
     public virtual void Update()
     {
-        //Si l'animation IDLE est en cours, arretez l'ennemi
+        //Si l'animation IDLE est en cours, arreter l'ennemi
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("IDLE") && anim.GetBool("InCombat") == false)
         {
             return;
@@ -97,8 +102,9 @@ public abstract class MeleeEnemy : MonoBehaviour {
     {
         //Voir si l'ennemi est près d'un bord
         notAtEdge = Physics2D.OverlapCircle(edgeCheck.position, groundCheckRadius, whatIsGround);
+        hittingWall = Physics2D.OverlapCircle(wallCheck.position, groundCheckRadius, whatIsGround);
         //si l'ennemi atteint un bord, il changera sa direction
-        if (!notAtEdge)
+        if (hittingWall || !notAtEdge)
             isFacingRight = !isFacingRight;
 
         if (isFacingRight)
@@ -143,6 +149,11 @@ public abstract class MeleeEnemy : MonoBehaviour {
         }
     }
 
+    public virtual void SpawnGems()
+    {
+        int randomGem = Random.Range(0, gems.Length);
+        Instantiate(gems[randomGem], this.transform.position, Quaternion.identity);
+    }
 
 
 }

@@ -466,6 +466,11 @@ MonoBehaviour:
   health: 30
   coins: 0
   speed: 3
+  gems:
+  - {fileID: 1022402225823260, guid: 19e2f1c3663d4154dab5cbd32882976f, type: 2}
+  - {fileID: 1022402225823260, guid: de2406f31e9876946b645704528b579c, type: 2}
+  - {fileID: 1022402225823260, guid: 48787ecb6fe10ca4da561c19cdff3d04, type: 2}
+  - {fileID: 1281880038761170, guid: 63803c7ffe7153b4cbe63593e5da04ed, type: 2}
   isFacingRight: 0
   isHit: 0
   groundCheckRadius: 0.1

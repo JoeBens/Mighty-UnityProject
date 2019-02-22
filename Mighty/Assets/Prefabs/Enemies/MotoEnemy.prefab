@@ -47,6 +47,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1572244193751656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4634089003266592}
+  m_Layer: 11
+  m_Name: wallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1680033943284816
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,11 +86,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380031822724508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.62, y: 9.4, z: 0}
+  m_LocalPosition: {x: 181.13, y: 13.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4480632171658104}
   - {fileID: 4809095886306476}
+  - {fileID: 4634089003266592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91,6 +107,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4305425658530148}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4634089003266592
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572244193751656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.82, y: 0.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4305425658530148}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4809095886306476
 Transform:
@@ -235,13 +264,19 @@ MonoBehaviour:
   health: 150
   coins: 0
   speed: 8
+  gems:
+  - {fileID: 1022402225823260, guid: 19e2f1c3663d4154dab5cbd32882976f, type: 2}
+  - {fileID: 1022402225823260, guid: de2406f31e9876946b645704528b579c, type: 2}
+  - {fileID: 1022402225823260, guid: 48787ecb6fe10ca4da561c19cdff3d04, type: 2}
+  - {fileID: 1281880038761170, guid: 63803c7ffe7153b4cbe63593e5da04ed, type: 2}
   isFacingRight: 1
   isHit: 0
   groundCheckRadius: 0.414
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 459008
   edgeCheck: {fileID: 4480632171658104}
+  wallCheck: {fileID: 4634089003266592}
 --- !u!212 &212151218589246324
 SpriteRenderer:
   m_ObjectHideFlags: 1

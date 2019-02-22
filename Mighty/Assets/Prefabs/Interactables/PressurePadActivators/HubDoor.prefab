@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61578510963089750}
   - component: {fileID: 114558812559392236}
   - component: {fileID: 95388889257151986}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: HubDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

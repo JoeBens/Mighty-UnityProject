@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 33991014566353564}
   - component: {fileID: 114455013069408178}
   - component: {fileID: 114273491739318844}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Horns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661741088065814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.3708, y: 4.903661, z: 0}
+  m_LocalPosition: {x: 495.0609, y: -18.02068, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -163,43 +163,132 @@ MonoBehaviour:
   fillCollider: 0
   pathData:
     _points:
-    - {x: 6.8914413, y: -2.3487897}
-    - {x: 3.3854752, y: -0.84625244}
+    - {x: -16.34607, y: -4.264324}
+    - {x: -1.0709859, y: -3.120512}
+    - {x: 10.237915, y: -3.120512}
+    - {x: 14.285675, y: -3.120512}
+    - {x: 22.370056, y: -3.7115498}
+    - {x: 33.88965, y: -3.120512}
+    - {x: 18.827942, y: -6.4346256}
+    - {x: 13.734253, y: -6.4346256}
+    - {x: -2.5238037, y: -7.466278}
+    - {x: -14.04483, y: -8.124855}
+    - {x: -7.884613, y: -10.117826}
+    - {x: 0.8480835, y: -10.117826}
+    - {x: 18.827942, y: -8.719215}
+    - {x: 27.403381, y: -8.719215}
+    - {x: 35.39453, y: -7.466278}
+    - {x: 37.598633, y: -0.84625244}
+    - {x: 20.490381, y: -1.2005394}
+    - {x: 11.167694, y: 0.21180245}
+    - {x: 3.3854752, y: 0.21180245}
     - {x: -1.0709859, y: -0.197783}
-    - {x: -4.539871, y: -0.84625244}
-    - {x: -8.475143, y: -0.84625244}
+    - {x: -11.070709, y: -1.9131241}
+    - {x: -16.828125, y: 0.21180245}
     - {x: -6.899208, y: 1.207284}
     - {x: -3.6197586, y: 2.3055308}
     - {x: -1.0709859, y: 2.3055308}
     - {x: 1.519722, y: 2.3055308}
-    - {x: 3.3854752, y: 2.2126389}
-    - {x: 10.156258, y: 1.207284}
+    - {x: 3.3854752, y: 2.8391075}
+    - {x: 20.066772, y: 1.207284}
+    - {x: 28.186401, y: 2.2126389}
+    - {x: 35.27185, y: 4.0308313}
+    - {x: 29.578552, y: 5}
+    - {x: 21.865417, y: 3.5798244}
     - {x: 5, y: 5}
-    - {x: -5, y: 5}
+    - {x: -16.34607, y: 5}
     _pointControls:
     - radius: 1
       controlNext: {x: 0, y: 0}
       controlPrev: {x: 0, y: 0}
       type: 2
     - radius: 1
-      controlNext: {x: -1.444852, y: 0.4071834}
-      controlPrev: {x: 1.223788, y: -0.34488392}
+      controlNext: {x: 3.7670014, y: 0.1408411}
+      controlPrev: {x: -5.1023846, y: -0.19076855}
       type: 2
     - radius: 1
-      controlNext: {x: -1.1760868, y: -0.023705922}
-      controlPrev: {x: 1.5008265, y: 0.030251572}
+      controlNext: {x: 1.3492533, y: 0}
+      controlPrev: {x: -3.7696335, y: -0}
       type: 2
     - radius: 1
-      controlNext: {x: -1.3061613, y: -0.121037774}
-      controlPrev: {x: 1.1713074, y: 0.10854129}
+      controlNext: {x: 2.700187, y: -0.0985719}
+      controlPrev: {x: -1.3483552, y: 0.049222488}
       type: 2
     - radius: 1
-      controlNext: {x: -0.38160467, y: 0.77387804}
-      controlPrev: {x: 0.5801391, y: -1.1764973}
+      controlNext: {x: 3.8446884, y: -0.0417483}
+      controlPrev: {x: -2.7018263, y: 0.02933831}
       type: 2
     - radius: 1
-      controlNext: {x: 0.9384609, y: 0.66954}
-      controlPrev: {x: -0.7024088, y: -0.5011299}
+      controlNext: {x: 0.6863961, y: -5.094639}
+      controlPrev: {x: -0.51338345, y: 3.8104868}
+      type: 2
+    - radius: 1
+      controlNext: {x: -1.6879503, y: -0.18350975}
+      controlPrev: {x: 5.110556, y: 0.5556069}
+      type: 2
+    - radius: 1
+      controlNext: {x: -5.427526, y: -0.17202842}
+      controlPrev: {x: 1.697044, y: 0.053788748}
+      type: 2
+    - radius: 1
+      controlNext: {x: -3.8396351, y: -0.23156206}
+      controlPrev: {x: 5.420403, y: 0.32689556}
+      type: 2
+    - radius: 1
+      controlNext: {x: -0.27527556, y: -2.1405666}
+      controlPrev: {x: 0.49063158, y: 3.8151932}
+      type: 2
+    - radius: 1
+      controlNext: {x: 2.875348, y: -0.45354787}
+      controlPrev: {x: -2.1318362, y: 0.33626875}
+      type: 2
+    - radius: 1
+      controlNext: {x: 6.006863, y: 0.23327756}
+      controlPrev: {x: -2.908706, y: -0.1129601}
+      type: 2
+    - radius: 1
+      controlNext: {x: 2.8563263, y: 0.110925935}
+      controlPrev: {x: -6.006863, y: -0.23327756}
+      type: 2
+    - radius: 1
+      controlNext: {x: 2.6881113, y: 0.20945583}
+      controlPrev: {x: -2.8498418, y: -0.22205776}
+      type: 2
+    - radius: 1
+      controlNext: {x: 1.7751547, y: 1.5026728}
+      controlPrev: {x: -2.0579336, y: -1.7420455}
+      type: 2
+    - radius: 1
+      controlNext: {x: -3.383701, y: 4.591936}
+      controlPrev: {x: 1.3796886, y: -1.8723408}
+      type: 2
+    - radius: 1
+      controlNext: {x: -3.1364193, y: 0.20359783}
+      controlPrev: {x: 5.691993, y: -0.3694906}
+      type: 2
+    - radius: 1
+      controlNext: {x: -2.5867462, y: 0.19482823}
+      controlPrev: {x: 3.1341436, y: -0.23605703}
+      type: 2
+    - radius: 1
+      controlNext: {x: -1.4901819, y: -0.06833598}
+      controlPrev: {x: 2.5913498, y: 0.11883276}
+      type: 2
+    - radius: 1
+      controlNext: {x: -3.353052, y: -0.4409887}
+      controlPrev: {x: 1.4790114, y: 0.1945175}
+      type: 2
+    - radius: 1
+      controlNext: {x: -2.0370557, y: 0.18761294}
+      controlPrev: {x: 3.367674, y: -0.31016293}
+      type: 2
+    - radius: 1
+      controlNext: {x: 0.42070365, y: 3.2995193}
+      controlPrev: {x: -0.25873837, y: -2.0292482}
+      type: 2
+    - radius: 1
+      controlNext: {x: 1.1271222, y: 0.24205022}
+      controlPrev: {x: -3.2520876, y: -0.69838786}
       type: 2
     - radius: 1
       controlNext: {x: 0.83852524, y: 0.13667561}
@@ -210,20 +299,36 @@ MonoBehaviour:
       controlPrev: {x: -0.84959096, y: -0}
       type: 2
     - radius: 1
-      controlNext: {x: 0.6224954, y: -0.015486781}
-      controlPrev: {x: -0.8633022, y: 0.0214777}
+      controlNext: {x: 0.6405869, y: 0.08979899}
+      controlPrev: {x: -0.85520726, y: -0.119884975}
       type: 2
     - radius: 1
-      controlNext: {x: 2.2705946, y: -0.22455634}
-      controlPrev: {x: -0.619665, y: 0.06128338}
+      controlNext: {x: 5.5641017, y: 0.50503236}
+      controlPrev: {x: -0.6442022, y: -0.058471784}
       type: 2
     - radius: 1
-      controlNext: {x: 0.8127628, y: 1.9727713}
-      controlPrev: {x: -0.8691531, y: -2.1096442}
+      controlNext: {x: 2.726986, y: 0.03501313}
+      controlPrev: {x: -5.586514, y: -0.071728036}
       type: 2
     - radius: 1
-      controlNext: {x: -3.1671495, y: 1.0393631}
-      controlPrev: {x: 2.0272648, y: -0.6652873}
+      controlNext: {x: 2.3957424, y: 0.45377192}
+      controlPrev: {x: -2.679569, y: -0.50753087}
+      type: 2
+    - radius: 1
+      controlNext: {x: -0.079459615, y: 1.923426}
+      controlPrev: {x: 0.100645535, y: -2.4362595}
+      type: 2
+    - radius: 1
+      controlNext: {x: -2.6142037, y: -0.017608846}
+      controlPrev: {x: 1.925023, y: 0.012966637}
+      type: 2
+    - radius: 1
+      controlNext: {x: -5.63492, y: -0.27654898}
+      controlPrev: {x: 2.6111205, y: 0.12814783}
+      type: 2
+    - radius: 1
+      controlNext: {x: -7.109081, y: 0.2987862}
+      controlPrev: {x: 5.636726, y: -0.23690487}
       type: 2
     - radius: 1
       controlNext: {x: 0, y: 0}
@@ -232,6 +337,69 @@ MonoBehaviour:
     _closed: 0
     _splitDistance: 1
     _data:
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
     - directionOverride: 100
       cutOverrides: 
       scale: 1
