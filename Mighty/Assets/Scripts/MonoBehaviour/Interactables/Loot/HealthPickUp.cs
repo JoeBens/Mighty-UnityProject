@@ -13,6 +13,7 @@ public class HealthPickUp : MonoBehaviour {
         {
             if (other.gameObject.GetComponent<PlayerStat>() != null)
             {
+                FindObjectOfType<AudioManager>().Play("HealthPickUp");
                 other.gameObject.GetComponent<PlayerStat>().Health += healthGiven;
                 Destroy(this.gameObject);
             }

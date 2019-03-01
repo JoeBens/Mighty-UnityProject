@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212819811660098544}
   - component: {fileID: 60729990338846888}
   - component: {fileID: 114740330133774128}
+  - component: {fileID: 114537077471445656}
   m_Layer: 16
   m_Name: spikes_11
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +41,10 @@ GameObject:
   - component: {fileID: 212698748364205828}
   - component: {fileID: 60634612377579220}
   - component: {fileID: 114738508069883060}
+  - component: {fileID: 114398376337967346}
   m_Layer: 16
   m_Name: spikes_09
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +60,10 @@ GameObject:
   - component: {fileID: 212471849676054938}
   - component: {fileID: 60126249790993598}
   - component: {fileID: 114217732135395558}
+  - component: {fileID: 114848169341919362}
   m_Layer: 16
   m_Name: spikes_10
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,6 +500,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 20
+--- !u!114 &114398376337967346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614274046636276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114537077471445656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185647369325438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114738508069883060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -521,6 +546,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 20
+--- !u!114 &114848169341919362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721590390736554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!210 &210412930694574468
 SortingGroup:
   m_ObjectHideFlags: 1

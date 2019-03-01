@@ -22,6 +22,7 @@ public class Switch : MonoBehaviour {
         if(collision.gameObject.tag=="FireBall" || collision.gameObject.tag == "PlayerHitbox")
         {
             spriteRenderer.sprite = activatedState;
+            FindObjectOfType<AudioManager>().Play("SwitchActivated");
             activated = true;
         }
     }

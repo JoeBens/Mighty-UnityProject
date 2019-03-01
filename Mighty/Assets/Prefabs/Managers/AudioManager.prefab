@@ -59,8 +59,8 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: Theme
-    clip: {fileID: 8300000, guid: 3a9ba69f03694d44a9968f5b7c4abb1c, type: 3}
-    volume: 0.454
+    clip: {fileID: 8300000, guid: d82b48a875a0c194eaa47e9325c56794, type: 3}
+    volume: 0.128
     pitch: 1
     source: {fileID: 0}
     loop: 1
@@ -142,3 +142,81 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: Hey
+    clip: {fileID: 8300000, guid: 82c689423bdd94d2c981b6ea540a4a77, type: 3}
+    volume: 0.536
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: FlyingEnemyDeath
+    clip: {fileID: 8300000, guid: 471d678d2b6a34e6cb451ddc8816ec5b, type: 3}
+    volume: 0.536
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: HubDoorOpen
+    clip: {fileID: 8300000, guid: 1a7710861fe86484fb73f4131c5bb3f8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: SwitchDoorOpen
+    clip: {fileID: 8300000, guid: 3be171efc7758c14fbbd5d2a11f944cb, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: SwitchActivated
+    clip: {fileID: 8300000, guid: d76c71e98617e1c41a5cdc490eb1bee1, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: CoinPickUp
+    clip: {fileID: 8300000, guid: ab7526c990d33493ca9335cb9991f315, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: HealthPickUp
+    clip: {fileID: 8300000, guid: 862f683419f8f498194b9bb97c661d75, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: cc53c7e102a6bfd4c99553ffb38f1da9, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Mushroom
+    clip: {fileID: 8300000, guid: eb511d941117b4025a498881f8db3140, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: MovingPlatform
+    clip: {fileID: 8300000, guid: eab9a0a14da60e849adb421b97581aa8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Danger
+    clip: {fileID: 8300000, guid: a5406be214f159a4abfedff134037b3d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: PressurePadActivated
+    clip: {fileID: 8300000, guid: f911838f7d8347b47b1c821f6d3c98fc, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BoxPushed
+    clip: {fileID: 8300000, guid: 147f688959ed7d9448f171f2fb12893d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1

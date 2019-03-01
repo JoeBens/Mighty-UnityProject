@@ -19,13 +19,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4122115060240114}
+  - component: {fileID: 114519104156349540}
   - component: {fileID: 23578091227446346}
   - component: {fileID: 33991014566353564}
   - component: {fileID: 114455013069408178}
   - component: {fileID: 114273491739318844}
+  - component: {fileID: 114533103788630028}
   m_Layer: 16
   m_Name: Horns
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,3 +469,25 @@ MonoBehaviour:
   directionOverrides: 
   cutOverrides: []
   vertScales: []
+--- !u!114 &114519104156349540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661741088065814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114533103788630028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661741088065814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

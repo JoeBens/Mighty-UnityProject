@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212636040528739180}
   - component: {fileID: 60603593062433884}
   - component: {fileID: 114794005399813636}
+  - component: {fileID: 114864781426648340}
   m_Layer: 16
   m_Name: Wood_Spikes (2)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,9 +56,10 @@ GameObject:
   - component: {fileID: 212423365693194892}
   - component: {fileID: 60843318652589882}
   - component: {fileID: 114449061207502842}
+  - component: {fileID: 114830601518773152}
   m_Layer: 16
   m_Name: Wood_Spikes (1)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,9 +75,10 @@ GameObject:
   - component: {fileID: 212385882959552714}
   - component: {fileID: 60304130251476368}
   - component: {fileID: 114003837742145740}
+  - component: {fileID: 114744865006575122}
   m_Layer: 16
   m_Name: Wood_Spikes (7)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,9 +94,10 @@ GameObject:
   - component: {fileID: 212814971800763732}
   - component: {fileID: 60068207400500246}
   - component: {fileID: 114923826091418694}
+  - component: {fileID: 114449148379335290}
   m_Layer: 16
   m_Name: Wood_Spikes (6)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,9 +113,10 @@ GameObject:
   - component: {fileID: 212585547958276982}
   - component: {fileID: 60691437971928560}
   - component: {fileID: 114421347908004926}
+  - component: {fileID: 114669990162147488}
   m_Layer: 16
   m_Name: Wood_Spikes (4)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,9 +132,10 @@ GameObject:
   - component: {fileID: 212752313754829090}
   - component: {fileID: 60624767600844212}
   - component: {fileID: 114765164152597166}
+  - component: {fileID: 114512039407147286}
   m_Layer: 16
   m_Name: Wood_Spikes
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,9 +151,10 @@ GameObject:
   - component: {fileID: 212024050018833816}
   - component: {fileID: 60828952810061314}
   - component: {fileID: 114116557653192916}
+  - component: {fileID: 114616929889475372}
   m_Layer: 16
   m_Name: Wood_Spikes (3)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,9 +170,10 @@ GameObject:
   - component: {fileID: 212139824814333404}
   - component: {fileID: 60061884934714468}
   - component: {fileID: 114157021626265416}
+  - component: {fileID: 114815440514182944}
   m_Layer: 16
   m_Name: Wood_Spikes (5)
-  m_TagString: Untagged
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168003843657924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.54, y: -4.29, z: -0.109375}
+  m_LocalPosition: {x: 10.77, y: -5.35, z: -0.109375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4447209849015178}
@@ -1203,6 +1211,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 150
+--- !u!114 &114449148379335290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1647671346998232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114512039407147286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837137954540838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114616929889475372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921341244297316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114669990162147488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700832420279696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114744865006575122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462671734878578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114765164152597166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,6 +1290,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 150
+--- !u!114 &114815440514182944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933565364461260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114830601518773152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1428618386784712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114864781426648340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108970225796960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8166702990d1964db546595ca30521a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114923826091418694
 MonoBehaviour:
   m_ObjectHideFlags: 1

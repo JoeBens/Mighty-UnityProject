@@ -18,13 +18,16 @@ public class MovingPlatform : MonoBehaviour {
     [SerializeField]
     private Transform childTransformB;
 
+    //public AudioClip clip;
 
     // Use this for initialization
     void Start () {
         posA = childTransformA.localPosition;
         posB = childTransformB.localPosition;
         nextPos = posB;
-	}
+        //FindObjectOfType<AudioManager>().Play("MovingPlatform");
+        //AudioSource.PlayClipAtPoint(clip, this.transform.position, 1f);
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -22,6 +22,7 @@ public class Checkpoint : MonoBehaviour
         {
             gm.lastCheckpointPos = this.transform.position;
             activated = true;
+            FindObjectOfType<AudioManager>().Play("Checkpoint");
             anim.SetTrigger("Activated");
         }
     }

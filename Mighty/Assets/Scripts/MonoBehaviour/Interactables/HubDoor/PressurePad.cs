@@ -20,6 +20,8 @@ public class PressurePad : MonoBehaviour {
         {
             Debug.Log("gotem");
             sp.sprite = activatedState;
+            FindObjectOfType<AudioManager>().Play("PressurePadActivated");
+
             activated = true;
         }    
     }

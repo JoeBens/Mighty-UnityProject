@@ -10,6 +10,7 @@ TagManager:
   - pushable
   - PressurePadActivator
   - GM
+  - Danger
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Loot
   - Checkpoint
   - GM
-  - 
+  - CameraBorder
   - 
   - 
   - 

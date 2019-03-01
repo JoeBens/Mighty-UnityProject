@@ -48,6 +48,7 @@ public class HubDoor : MonoBehaviour {
         if (c == pressurePads.Length && openable == true)
         {
             anim.SetTrigger("Open");
+            FindObjectOfType<AudioManager>().Play("HubDoorOpen");
             openable = false;
         }
     }

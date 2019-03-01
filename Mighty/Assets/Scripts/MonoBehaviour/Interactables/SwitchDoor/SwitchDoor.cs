@@ -29,6 +29,7 @@ public class SwitchDoor : MonoBehaviour {
         if (c == neededSwitches.Length && openable == true)
         {
             anim.SetTrigger("Open");
+            FindObjectOfType<AudioManager>().Play("SwitchDoorOpen");
             openable = false;
         }
             

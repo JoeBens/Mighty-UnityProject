@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114418913637626270}
   m_Layer: 8
   m_Name: MovingPlatform
-  m_TagString: Untagged
+  m_TagString: Moving_Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,8 +38,9 @@ GameObject:
   - component: {fileID: 212854691852147654}
   - component: {fileID: 61408767388500270}
   - component: {fileID: 251427259669315768}
+  - component: {fileID: 50997588331824542}
   m_Layer: 8
-  m_Name: Moving Platform1
+  m_Name: Body
   m_TagString: Moving_Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +56,7 @@ GameObject:
   - component: {fileID: 4444331296081108}
   m_Layer: 8
   m_Name: "\xA8PositionB"
-  m_TagString: Untagged
+  m_TagString: Moving_Platform
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +102,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50997588331824542
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501947109871198}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &61408767388500270
 BoxCollider2D:
   m_ObjectHideFlags: 1
