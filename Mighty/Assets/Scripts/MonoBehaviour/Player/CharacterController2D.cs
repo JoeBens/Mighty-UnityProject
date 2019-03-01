@@ -102,6 +102,7 @@ public class CharacterController2D : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(new Vector2(0, jumpForce));
+                
                 canDoubleJump = true;
             }
             else
@@ -111,6 +112,7 @@ public class CharacterController2D : MonoBehaviour
                     canDoubleJump = false;
                     rb.velocity = new Vector2(rb.velocity.x, 0);
                     rb.AddForce(new Vector2(0, jumpForce));
+                    
                 }
             }
         }
