@@ -184,8 +184,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168003843657924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.77, y: -5.35, z: -0.109375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -167.12476, y: -27.51766, z: -1.9867951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4447209849015178}
@@ -1162,7 +1162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114116557653192916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1174,7 +1176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114157021626265416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1186,7 +1190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114421347908004926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1198,7 +1204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114449061207502842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1210,7 +1218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114449148379335290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1277,7 +1287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114794005399813636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1289,7 +1301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!114 &114815440514182944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1334,7 +1348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 150
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 1
 --- !u!212 &212024050018833816
 SpriteRenderer:
   m_ObjectHideFlags: 1

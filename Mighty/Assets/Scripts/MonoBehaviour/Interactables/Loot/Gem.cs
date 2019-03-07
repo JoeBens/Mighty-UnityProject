@@ -14,15 +14,14 @@ public class Gem : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            
+            GameObject effect = Instantiate(gemEffectPrefab, transform.position, transform.rotation);
+            GameObject effectT = Instantiate(gemEffectPrefabT, transform.position, transform.rotation);
+            Destroy(effect, 0.5f);
+            Destroy(effectT, 0.5f);
             if (other.gameObject.GetComponent<PlayerStat>() != null)
             {
                 FindObjectOfType<AudioManager>().Play("CoinPickUp");
                 other.gameObject.GetComponent<PlayerStat>().howManyGems += this.value;
-                GameObject effect = Instantiate(gemEffectPrefab, transform.position, transform.rotation);
-                GameObject effectT = Instantiate(gemEffectPrefabT, transform.position, transform.rotation);
-                Destroy(effect, 0.5f);
-                Destroy(effectT, 0.5f);
                 Destroy(this.gameObject);
             }
             

@@ -117,8 +117,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948820438401858}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.36, y: 1.24, z: 0.07081374}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 113.55336, y: 16.486853, z: 0.07081374}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4533397503115448}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackEffectPrefab: {fileID: 0}
   attackEffectPos: {fileID: 0}
-  damageAmount: 30
+  damageAmount: 1
 --- !u!114 &114460279155508794
 MonoBehaviour:
   m_ObjectHideFlags: 1

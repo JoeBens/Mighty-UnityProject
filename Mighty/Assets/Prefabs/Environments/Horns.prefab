@@ -38,8 +38,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661741088065814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 495.0609, y: -18.02068, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 308.8828, y: -0.16394424, z: -1.8774201}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 100
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
+  damageAmount: 3
 --- !u!114 &114455013069408178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,14 +173,15 @@ MonoBehaviour:
     - {x: 14.285675, y: -3.120512}
     - {x: 22.370056, y: -3.7115498}
     - {x: 33.88965, y: -3.120512}
+    - {x: 27.403381, y: -5.315483}
     - {x: 18.827942, y: -6.4346256}
     - {x: 13.734253, y: -6.4346256}
-    - {x: -2.5238037, y: -7.466278}
-    - {x: -14.04483, y: -8.124855}
-    - {x: -7.884613, y: -10.117826}
-    - {x: 0.8480835, y: -10.117826}
-    - {x: 18.827942, y: -8.719215}
-    - {x: 27.403381, y: -8.719215}
+    - {x: -2.0049438, y: -6.4346256}
+    - {x: -14.1189575, y: -8.124855}
+    - {x: -7.8845825, y: -8.719215}
+    - {x: 1.519722, y: -8.719215}
+    - {x: 18.012604, y: -8.719215}
+    - {x: 27.403381, y: -8.124855}
     - {x: 35.39453, y: -7.466278}
     - {x: 37.598633, y: -0.84625244}
     - {x: 20.490381, y: -1.2005394}
@@ -221,44 +224,48 @@ MonoBehaviour:
       controlPrev: {x: -2.7018263, y: 0.02933831}
       type: 2
     - radius: 1
-      controlNext: {x: 0.6863961, y: -5.094639}
-      controlPrev: {x: -0.51338345, y: 3.8104868}
+      controlNext: {x: 0.42835048, y: -2.2419782}
+      controlPrev: {x: -0.7215546, y: 3.7766027}
       type: 2
     - radius: 1
-      controlNext: {x: -1.6879503, y: -0.18350975}
-      controlPrev: {x: 5.110556, y: 0.5556069}
+      controlNext: {x: -2.8080902, y: -0.6516901}
+      controlPrev: {x: 2.2234404, y: 0.516007}
       type: 2
     - radius: 1
-      controlNext: {x: -5.427526, y: -0.17202842}
-      controlPrev: {x: 1.697044, y: 0.053788748}
+      controlNext: {x: -1.6943234, y: -0.11009253}
+      controlPrev: {x: 2.876653, y: 0.18691711}
       type: 2
     - radius: 1
-      controlNext: {x: -3.8396351, y: -0.23156206}
-      controlPrev: {x: 5.420403, y: 0.32689556}
+      controlNext: {x: -5.246399, y: 0}
+      controlPrev: {x: 1.6978964, y: -0}
       type: 2
     - radius: 1
-      controlNext: {x: -0.27527556, y: -2.1405666}
-      controlPrev: {x: 0.49063158, y: 3.8151932}
+      controlNext: {x: -4.06733, y: -0.282383}
+      controlPrev: {x: 5.2338004, y: 0.3633677}
       type: 2
     - radius: 1
-      controlNext: {x: 2.875348, y: -0.45354787}
-      controlPrev: {x: -2.1318362, y: 0.33626875}
+      controlNext: {x: 0.04548732, y: -2.0870519}
+      controlPrev: {x: -0.08883979, y: 4.0761523}
       type: 2
     - radius: 1
-      controlNext: {x: 6.006863, y: 0.23327756}
-      controlPrev: {x: -2.908706, y: -0.1129601}
+      controlNext: {x: 3.1312287, y: -0.1489218}
+      controlPrev: {x: -2.0851908, y: 0.09917203}
       type: 2
     - radius: 1
-      controlNext: {x: 2.8563263, y: 0.110925935}
-      controlPrev: {x: -6.006863, y: -0.23327756}
+      controlNext: {x: 5.4976273, y: 0}
+      controlPrev: {x: -3.1347682, y: -0}
       type: 2
     - radius: 1
-      controlNext: {x: 2.6881113, y: 0.20945583}
-      controlPrev: {x: -2.8498418, y: -0.22205776}
+      controlNext: {x: 3.1349564, y: 0.09910955}
+      controlPrev: {x: -5.494882, y: -0.17371702}
       type: 2
     - radius: 1
-      controlNext: {x: 1.7751547, y: 1.5026728}
-      controlPrev: {x: -2.0579336, y: -1.7420455}
+      controlNext: {x: 2.665684, y: 0.19418435}
+      controlPrev: {x: -3.1282337, y: -0.22787923}
+      type: 2
+    - radius: 1
+      controlNext: {x: 1.8290211, y: 1.4366218}
+      controlPrev: {x: -2.1018903, y: -1.6509496}
       type: 2
     - radius: 1
       controlNext: {x: -3.383701, y: 4.591936}
@@ -339,6 +346,9 @@ MonoBehaviour:
     _closed: 0
     _splitDistance: 1
     _data:
+    - directionOverride: 100
+      cutOverrides: 
+      scale: 1
     - directionOverride: 100
       cutOverrides: 
       scale: 1

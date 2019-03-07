@@ -9,65 +9,86 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1442901446640806}
+  m_RootGameObject: {fileID: 1179237974331604}
   m_IsPrefabAsset: 1
---- !u!1 &1442901446640806
+--- !u!1 &1179237974331604
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4094133237411778}
-  - component: {fileID: 212468418403079124}
-  - component: {fileID: 95299659223809316}
-  - component: {fileID: 114911667838384836}
-  - component: {fileID: 58819210913427190}
-  m_Layer: 15
-  m_Name: AcidProjectile
-  m_TagString: Untagged
+  - component: {fileID: 4656787077591014}
+  - component: {fileID: 212487916969108496}
+  - component: {fileID: 95200882701156596}
+  - component: {fileID: 58328455673808820}
+  - component: {fileID: 114249661137949860}
+  - component: {fileID: 50457948450975150}
+  m_Layer: 13
+  m_Name: MuzzleFlash
+  m_TagString: FireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4094133237411778
+--- !u!4 &4656787077591014
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442901446640806}
+  m_GameObject: {fileID: 1179237974331604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.191, y: 23.129, z: 0}
+  m_LocalPosition: {x: 11.015071, y: 1.6724358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58819210913427190
+--- !u!50 &50457948450975150
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179237974331604}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!58 &58328455673808820
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442901446640806}
+  m_GameObject: {fileID: 1179237974331604}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.24, y: 0}
   serializedVersion: 2
-  m_Radius: 0.17
---- !u!95 &95299659223809316
+  m_Radius: 0.61
+--- !u!95 &95200882701156596
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442901446640806}
+  m_GameObject: {fileID: 1179237974331604}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4beac7c4dd381a44d882daf401fd34c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: a80525b90271c124fb0594591d8117ea, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -76,27 +97,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114911667838384836
+--- !u!114 &114249661137949860
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442901446640806}
+  m_GameObject: {fileID: 1179237974331604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72163cc3ebd37f64bb390a834916b92a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e9b08ae698ce4e4da5d691dd3a32247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileDamage: 1
-  origin: {fileID: 0}
-  controlPoint: {fileID: 0}
-  duration: 1
---- !u!212 &212468418403079124
+  fireBallSpeed: 15
+  bulletDamage: 178
+  rb: {fileID: 50457948450975150}
+  impactExplosion: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
+    type: 2}
+  impactExplosionF: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 2}
+--- !u!212 &212487916969108496
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442901446640806}
+  m_GameObject: {fileID: 1179237974331604}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -123,15 +147,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1392683929
-  m_SortingLayer: 2
+  m_SortingLayerID: -223810207
+  m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: be13cb8cd1943a54fa3e6eabfa8b4f62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b362abd1864c755498a78ad74d9b26fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.68359375, y: 0.69140625}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
