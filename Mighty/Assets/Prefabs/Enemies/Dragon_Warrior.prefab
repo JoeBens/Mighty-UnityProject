@@ -309,6 +309,8 @@ MonoBehaviour:
     m_Bits: 196864
   edgeCheck: {fileID: 4294654607305330}
   wallCheck: {fileID: 4855712993965928}
+  bloodEffectPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 2}
+  deathEffectPrefab: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 2}
 --- !u!114 &114762452563634924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
   damageAmount: 0
 --- !u!212 &212149992502329548
 SpriteRenderer:

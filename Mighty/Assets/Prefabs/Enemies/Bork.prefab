@@ -298,6 +298,8 @@ MonoBehaviour:
     m_Bits: 256
   edgeCheck: {fileID: 4224547983406526}
   wallCheck: {fileID: 0}
+  bloodEffectPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 2}
+  deathEffectPrefab: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 2}
 --- !u!212 &212070711618500766
 SpriteRenderer:
   m_ObjectHideFlags: 1

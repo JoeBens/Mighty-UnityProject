@@ -88,6 +88,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  gemEffectPrefab: {fileID: 100006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 2}
+  gemEffectPrefabT: {fileID: 100000, guid: 6264b2b598b1d2f44a146d818eccb054, type: 2}
 --- !u!212 &212722766602965458
 SpriteRenderer:
   m_ObjectHideFlags: 1

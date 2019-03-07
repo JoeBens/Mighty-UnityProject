@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpHeight: 39.3
+  mushroomEffectPrefab: {fileID: 100018, guid: a40b64bf23366dc42a892af2c6ff6140, type: 2}
 --- !u!212 &212917517636628658
 SpriteRenderer:
   m_ObjectHideFlags: 1

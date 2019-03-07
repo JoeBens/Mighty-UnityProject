@@ -11,6 +11,7 @@ TagManager:
   - PressurePadActivator
   - GM
   - Danger
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -56,4 +57,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4071157089
+    locked: 0
+  - name: Particles
+    uniqueID: 1827300043
     locked: 0

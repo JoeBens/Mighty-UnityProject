@@ -14,11 +14,12 @@ public class FireBallEffect : MonoBehaviour {
 
     private bool canDamage = true; 
 
-    public GameObject impactExplosion; // l'explosion
+    public GameObject impactExplosion;
+    public GameObject impactExplosionF; 
 
-    
+
     // Use this for initialization
-	void Start () {
+    void Start () {
         rb.velocity = transform.right * fireBallSpeed;
 	}
 
@@ -40,8 +41,11 @@ public class FireBallEffect : MonoBehaviour {
         }
         // si une collision occure, on instancie une explosion 
         GameObject explosion = Instantiate(impactExplosion, transform.position, transform.rotation);
+        GameObject explosionF = Instantiate(impactExplosionF, transform.position, transform.rotation);
+        FindObjectOfType<AudioManager>().Play("FireBallImpact");
         // après 0.5s on détruit l'explosion pour que ça reste pas et prend un peu de la mémoire
         Destroy(explosion, 0.5f);
+        Destroy(explosionF, 0.5f);
         Destroy(gameObject);
     }
     IEnumerator ResetCanDamage()

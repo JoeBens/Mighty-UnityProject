@@ -11,6 +11,8 @@ public class Switch : MonoBehaviour {
 
     private SpriteRenderer spriteRenderer;
 
+    public GameObject effectActivation;
+
     // Use this for initialization
     void Start()
     {
@@ -19,10 +21,12 @@ public class Switch : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag=="FireBall" || collision.gameObject.tag == "PlayerHitbox")
+        if(( collision.gameObject.tag=="FireBall" || collision.gameObject.tag == "PlayerHitbox" ) && activated == false)
         {
             spriteRenderer.sprite = activatedState;
             FindObjectOfType<AudioManager>().Play("SwitchActivated");
+            GameObject effectD = Instantiate(effectActivation, transform.position, transform.rotation);
+            Destroy(effectD, 2.5f);
             activated = true;
         }
     }

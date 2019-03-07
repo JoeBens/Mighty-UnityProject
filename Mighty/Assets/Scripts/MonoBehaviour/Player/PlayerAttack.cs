@@ -24,6 +24,10 @@ public class PlayerAttack : MonoBehaviour {
     [SerializeField]                                    
     private float strikeCd = 0.6f;
 
+    [SerializeField]
+    private GameObject attackEffectPrefab;
+    [SerializeField]
+    private Transform attackEffectPos;
 
     private Animator anim;
 
@@ -57,6 +61,8 @@ public class PlayerAttack : MonoBehaviour {
                 playerAnim.SimpleAttack();
                 FindObjectOfType<AudioManager>().Play("PlayerAttackOne");
 
+
+
             attackTimer = attackCd;
             }
             //pour s'assurer que le joueur ne spamme pas l'attaque
@@ -80,6 +86,7 @@ public class PlayerAttack : MonoBehaviour {
 
                 playerAnim.Strike();
                 FindObjectOfType<AudioManager>().Play("PlayerAttackTwo");
+               
 
                 strikeTimer = strikeCd;
             }

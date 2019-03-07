@@ -9,6 +9,9 @@ public class Checkpoint : MonoBehaviour
     private bool activated = false;
     private Animator anim;
 
+
+    public GameObject effectActivation;
+
     private void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
@@ -23,6 +26,8 @@ public class Checkpoint : MonoBehaviour
             gm.lastCheckpointPos = this.transform.position;
             activated = true;
             FindObjectOfType<AudioManager>().Play("Checkpoint");
+            GameObject effect = Instantiate(effectActivation, transform.position, transform.rotation);
+            Destroy(effect, 0.8f);
             anim.SetTrigger("Activated");
         }
     }

@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthGiven: 30
+  heartEffectPrefab: {fileID: 100004, guid: 3af6f68141914ca43ba39b2403757bd0, type: 2}
+  heartEffectPrefabT: {fileID: 100000, guid: 8815dfa46aeef0a44861b4d09697cae4, type: 2}
 --- !u!212 &212836203192032438
 SpriteRenderer:
   m_ObjectHideFlags: 1

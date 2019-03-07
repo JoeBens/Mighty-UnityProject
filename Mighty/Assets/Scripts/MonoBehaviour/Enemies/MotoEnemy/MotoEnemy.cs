@@ -7,7 +7,11 @@ public class MotoEnemy : MeleeEnemy, IDamageable
     public int Health { get; set; }
 
     // Use this for initialization
-    
+    [SerializeField]
+    private GameObject bloodEffectPrefab;
+
+    [SerializeField]
+    private GameObject deathEffectPrefab;
 
     public override void Init()
     {
@@ -51,9 +55,12 @@ public class MotoEnemy : MeleeEnemy, IDamageable
         Health = Health - damageAmount;
         isHit = true;
         //Debug.Log("is Hit is true now");
-
+        GameObject effect = Instantiate(bloodEffectPrefab, transform.position, transform.rotation);
+        Destroy(effect, 0.5f);
         if (Health <= 0)
         {
+            GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
+            Destroy(effectD, 2.5f);
             SpawnGems();
             Destroy(this.gameObject);
         }

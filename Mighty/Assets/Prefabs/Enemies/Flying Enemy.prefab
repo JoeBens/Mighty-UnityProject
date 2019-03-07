@@ -487,6 +487,8 @@ MonoBehaviour:
   - {fileID: 4470555776783674}
   - {fileID: 4589369939971416}
   startWaitTime: 1
+  bloodEffectPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 2}
+  deathEffectPrefab: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 2}
   maxDistance: 8.3
 --- !u!212 &212124497623396072
 SpriteRenderer:

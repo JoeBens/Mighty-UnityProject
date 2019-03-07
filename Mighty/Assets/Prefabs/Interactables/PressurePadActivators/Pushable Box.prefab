@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 4246951915511190}
   - component: {fileID: 61064979585707820}
   - component: {fileID: 50443949418845318}
+  - component: {fileID: 114850247877822292}
   m_Layer: 17
   m_Name: Pushable Box
   m_TagString: Untagged
@@ -278,6 +279,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8804cdb6ec7dcda48a5e19a233bfc373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114850247877822292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1977232570791468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de997b2c9112c924faf52dcc472fb83c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMulti: 20
 --- !u!212 &212187647441144004
 SpriteRenderer:
   m_ObjectHideFlags: 1

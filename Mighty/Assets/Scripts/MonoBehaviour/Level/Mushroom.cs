@@ -9,8 +9,9 @@ public class Mushroom : MonoBehaviour {
     public float jumpHeight = 30f; // The amount of bounce.
     [Range(0.0f, 5.0f)] // Slide Bar.
     private Animator myAnim; // The animator component used for create the mushroom move effect.
-    
 
+    [SerializeField]
+    private GameObject mushroomEffectPrefab;
 
     // Use this for initialization
     void Awake()
@@ -28,7 +29,9 @@ public class Mushroom : MonoBehaviour {
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, jumpHeight); // The formula used to generate the mushroom jump is the same as we used to get the jump and double jump of our character.
             FindObjectOfType<AudioManager>().Play("Mushroom");
             myAnim.SetTrigger("Boing"); // Sets the mushroom's bounce animation.
-           
+            GameObject effect = Instantiate(mushroomEffectPrefab, transform.position, transform.rotation);
+            Destroy(effect, 0.5f);
+
 
         }
     }

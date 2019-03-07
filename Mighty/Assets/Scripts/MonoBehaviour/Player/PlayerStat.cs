@@ -5,7 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStat : MonoBehaviour, IDamageable {
 
-    
+
+
+    [SerializeField]
+    private GameObject bloodEffectPrefab;
+
+
+    [SerializeField]
+    private GameObject deathEffectPrefab;
+
     public int health;
 
     private Animator anim;
@@ -27,6 +35,12 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         Health -= damageAmount;
         anim.SetTrigger("Hurt");
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
+
+
+        GameObject effect = Instantiate(bloodEffectPrefab, transform.position, transform.rotation);
+        Destroy(effect, 0.5f);
+
+
 
         if (Health <= 0)
         {
@@ -59,7 +73,9 @@ public class PlayerStat : MonoBehaviour, IDamageable {
     {
         Debug.Log("I'm here");
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
-        yield return new WaitForSeconds(0.5f);
+        GameObject effect = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
+        Destroy(effect, 0.5f);
+        yield return new WaitForSeconds(1.0f);
         FindObjectOfType<GameManager>().PlayerIsDead();
         Destroy(this.gameObject, 1f);
         

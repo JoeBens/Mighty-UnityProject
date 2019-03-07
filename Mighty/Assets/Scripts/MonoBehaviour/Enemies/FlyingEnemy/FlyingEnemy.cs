@@ -12,6 +12,14 @@ public class FlyingEnemy : MeleeEnemy,IDamageable{
     private float waitTime;
     public float startWaitTime;
 
+
+    [SerializeField]
+    private GameObject bloodEffectPrefab;
+
+
+    [SerializeField]
+    private GameObject deathEffectPrefab;
+
     [SerializeField]
     private float maxDistance;
 
@@ -31,13 +39,16 @@ public class FlyingEnemy : MeleeEnemy,IDamageable{
     {
         //Debug.Log("Damage Taken");
          Health = Health - damageAmount;
-    
-         //Debug.Log("is Hit is true now");
-         //anim.SetTrigger("HURT");
+        GameObject effect = Instantiate(bloodEffectPrefab, transform.position, transform.rotation);
+        Destroy(effect, 0.5f);
+        //Debug.Log("is Hit is true now");
+        //anim.SetTrigger("HURT");
 
         if (Health <= 0)
         {
             FindObjectOfType<AudioManager>().Play("FlyingEnemyDeath");
+            GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
+            Destroy(effectD, 2.5f);
             SpawnGems();
             Destroy(this.gameObject, 0.3f);
 

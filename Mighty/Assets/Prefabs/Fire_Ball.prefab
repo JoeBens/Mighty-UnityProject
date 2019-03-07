@@ -111,7 +111,9 @@ MonoBehaviour:
   fireBallSpeed: 15
   bulletDamage: 178
   rb: {fileID: 50635955120937596}
-  impactExplosion: {fileID: 1473290448445462, guid: 8d320eea7b6c8e741ad5e7462cef1cb2,
+  impactExplosion: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
+    type: 2}
+  impactExplosionF: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 2}
 --- !u!212 &212975637266911846
 SpriteRenderer:

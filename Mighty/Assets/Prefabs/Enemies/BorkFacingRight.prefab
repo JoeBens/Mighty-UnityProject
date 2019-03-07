@@ -283,6 +283,8 @@ MonoBehaviour:
     m_Bits: 256
   edgeCheck: {fileID: 4093813982310276}
   wallCheck: {fileID: 0}
+  bloodEffectPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 2}
+  deathEffectPrefab: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 2}
 --- !u!114 &114566337041236896
 MonoBehaviour:
   m_ObjectHideFlags: 1

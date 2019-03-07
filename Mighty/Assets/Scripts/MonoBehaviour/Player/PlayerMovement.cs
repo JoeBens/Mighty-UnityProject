@@ -43,8 +43,9 @@ public class PlayerMovement : MonoBehaviour {
 
         // MoveIput = 1 si l'input est la flèche droite, -1 si l'input est la flèche gauche
         moveInput = Input.GetAxisRaw("Horizontal") * playerSpeed;
-        /*if(moveInput!=0)
-            FindObjectOfType<AudioManager>().Play("PlayerWalk");*/
+
+
+      
 
         //Run animation
         playerAnim.Move(moveInput);
@@ -89,4 +90,7 @@ public class PlayerMovement : MonoBehaviour {
         if (col.gameObject.tag == "Moving_Platform")
             this.transform.parent = null;
     }
+
+    
+
 }

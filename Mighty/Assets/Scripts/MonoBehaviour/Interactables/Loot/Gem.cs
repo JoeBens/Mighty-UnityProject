@@ -7,6 +7,9 @@ public class Gem : MonoBehaviour {
     [SerializeField]
     private int value;
 
+    [SerializeField]
+    private GameObject gemEffectPrefab, gemEffectPrefabT;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -16,6 +19,10 @@ public class Gem : MonoBehaviour {
             {
                 FindObjectOfType<AudioManager>().Play("CoinPickUp");
                 other.gameObject.GetComponent<PlayerStat>().howManyGems += this.value;
+                GameObject effect = Instantiate(gemEffectPrefab, transform.position, transform.rotation);
+                GameObject effectT = Instantiate(gemEffectPrefabT, transform.position, transform.rotation);
+                Destroy(effect, 0.5f);
+                Destroy(effectT, 0.5f);
                 Destroy(this.gameObject);
             }
             

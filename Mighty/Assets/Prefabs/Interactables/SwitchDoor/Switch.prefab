@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activatedState: {fileID: 21300002, guid: 1dbeddc56cf988f46b5e0ac5f5fa9ed7, type: 3}
   activated: 0
+  effectActivation: {fileID: 1628744458893394, guid: e243632bb3aff9549abdcfcc2ef0c4f0,
+    type: 2}
 --- !u!212 &212107024861397586
 SpriteRenderer:
   m_ObjectHideFlags: 1
