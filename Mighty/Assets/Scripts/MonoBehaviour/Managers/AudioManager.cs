@@ -9,7 +9,9 @@ public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
 
     public static AudioManager instance;
-    
+
+    private bool hasbeenPaused = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -29,6 +31,7 @@ public class AudioManager : MonoBehaviour {
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
+
 
             s.source.pitch = s.pitch;
 

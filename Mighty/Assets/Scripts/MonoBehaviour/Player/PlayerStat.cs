@@ -27,7 +27,13 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         anim = this.GetComponent<Animator>();
         Health = health;
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("OutOfScreen"))
+        {
+            Health = -1;
+        }
+    }
 
     public void TakeDamage(int damageAmount)
     {

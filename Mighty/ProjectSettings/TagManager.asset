@@ -12,6 +12,7 @@ TagManager:
   - GM
   - Danger
   - FxTemporaire
+  - OutOfScreen
   layers:
   - Default
   - TransparentFX

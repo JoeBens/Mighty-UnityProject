@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackEffectPrefab: {fileID: 0}
   attackEffectPos: {fileID: 0}
-  damageAmount: 1
+  damageAmount: 2
 --- !u!114 &114815440514182944
 MonoBehaviour:
   m_ObjectHideFlags: 1
