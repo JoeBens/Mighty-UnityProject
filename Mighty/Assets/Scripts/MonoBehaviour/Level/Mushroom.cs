@@ -27,6 +27,7 @@ public class Mushroom : MonoBehaviour {
         if (other.transform.tag == "Player")
         {
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, jumpHeight); // The formula used to generate the mushroom jump is the same as we used to get the jump and double jump of our character.
+            player.GetComponent<CharacterController2D>().canDoubleJump = true;
             FindObjectOfType<AudioManager>().Play("Mushroom");
             myAnim.SetTrigger("Boing"); // Sets the mushroom's bounce animation.
             GameObject effect = Instantiate(mushroomEffectPrefab, transform.position, transform.rotation);

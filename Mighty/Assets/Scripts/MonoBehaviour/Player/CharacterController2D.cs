@@ -18,7 +18,7 @@ public class CharacterController2D : MonoBehaviour
 
 
     private Vector3 m_Velocity = Vector3.zero; // une velocité de (0,0,0)
-    private bool canDoubleJump; // si le jouer peut sauter deux fois ou non
+    public bool canDoubleJump; // si le jouer peut sauter deux fois ou non
 
 
 

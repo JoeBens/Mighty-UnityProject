@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour {
 
     private bool hasbeenPaused = false;
 
+    public string mainTheme;
+   
     private void Awake()
     {
         if (instance == null)
@@ -43,7 +45,7 @@ public class AudioManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Play("Theme");	
+       
 	}
 
     public void Play(string name)
@@ -59,5 +61,12 @@ public class AudioManager : MonoBehaviour {
         if (s == null)
             return;
         s.source.Pause();
+    }
+    public void PauseEverything()
+    {
+        foreach (Sound s in sounds)
+        {
+            s.source.Pause();
+        }
     }
 }

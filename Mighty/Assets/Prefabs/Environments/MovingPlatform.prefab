@@ -57,7 +57,7 @@ GameObject:
   m_Layer: 8
   m_Name: "\xA8PositionB"
   m_TagString: Moving_Platform
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -81,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1501947109871198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4199829, y: 0.02656746, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4899, y: 0.4899, z: 0.4899}
   m_Children: []
   m_Father: {fileID: 4960944063067074}
@@ -93,8 +93,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000122617795066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.97, y: 5.36, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 87.21, y: -19.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4633924274750138}
@@ -158,7 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8365d1093269238439dad24b58f9dca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  startWaitTime: 1
+  speed: 5
   childTransformA: {fileID: 4633924274750138}
   childTransformB: {fileID: 4444331296081108}
 --- !u!212 &212854691852147654

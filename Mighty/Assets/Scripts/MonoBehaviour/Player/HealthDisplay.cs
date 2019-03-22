@@ -14,15 +14,23 @@ public class HealthDisplay : MonoBehaviour {
     public Sprite emptyHeart;
 
     //public Text healthText;
+    private PlayerStat ps;
 
 
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+        ps = FindObjectOfType<PlayerStat>();
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         
 
 
-        health = FindObjectOfType<PlayerStat>().Health;
+        health = ps.Health;
 
         if(health > numOfHearts)
         {

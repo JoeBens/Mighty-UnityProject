@@ -13,6 +13,9 @@ TagManager:
   - Danger
   - FxTemporaire
   - OutOfScreen
+  - GameOver
+  - FollowBG
+  - DoorKey
   layers:
   - Default
   - TransparentFX
@@ -37,7 +40,7 @@ TagManager:
   - Checkpoint
   - GM
   - CameraBorder
-  - 
+  - Background
   - 
   - 
   - 
@@ -47,11 +50,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 1984749237
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: DecorsBackground
+    uniqueID: 1916259151
+    locked: 0
   - name: Background
     uniqueID: 3615235567
+    locked: 0
+  - name: Decors
+    uniqueID: 2150187119
     locked: 0
   - name: Enemy
     uniqueID: 2902283367
@@ -61,4 +73,7 @@ TagManager:
     locked: 0
   - name: Particles
     uniqueID: 1827300043
+    locked: 0
+  - name: DecorsForeground
+    uniqueID: 1869312799
     locked: 0

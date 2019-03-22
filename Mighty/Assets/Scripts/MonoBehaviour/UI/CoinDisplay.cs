@@ -9,15 +9,18 @@ public class CoinDisplay : MonoBehaviour {
 
     public Text coinText;
 
+    private PlayerStat ps;
+
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        ps = FindObjectOfType<PlayerStat>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        numberOfCoins = FindObjectOfType<PlayerStat>().howManyGems;
+        numberOfCoins = ps.howManyGems;
 
         coinText.text = "X " + numberOfCoins;
     }

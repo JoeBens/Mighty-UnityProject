@@ -90,9 +90,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940068290678012}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 333.77, y: 14.63, z: 1.5234375}
-  m_LocalScale: {x: 0.72502697, y: 0.72502697, z: 0.72502697}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 98.93, y: -26.295845, z: -0.35398257}
+  m_LocalScale: {x: 0.72503, y: 0.72503, z: 0.72503}
   m_Children:
   - {fileID: 4329757969127342}
   - {fileID: 4418879886642060}
@@ -499,6 +499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
   damageAmount: 20
 --- !u!114 &114398376337967346
 MonoBehaviour:
@@ -533,6 +535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
   damageAmount: 20
 --- !u!114 &114740330133774128
 MonoBehaviour:
@@ -545,6 +549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc6455b32b70764f83302ca0872f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffectPrefab: {fileID: 0}
+  attackEffectPos: {fileID: 0}
   damageAmount: 20
 --- !u!114 &114848169341919362
 MonoBehaviour:
@@ -564,8 +570,8 @@ SortingGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940068290678012}
   m_Enabled: 1
-  m_SortingLayerID: -679731729
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!212 &212471849676054938
 SpriteRenderer:
@@ -603,7 +609,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9474aff97a5ba3c4cad46ffc3b557b1a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7351204, g: 0.50614095, b: 0.8867924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -649,7 +655,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 96b2410756109b548bdb106978ee6c92, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7351204, g: 0.50614095, b: 0.8867924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -695,7 +701,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c2c325a3f25c4754686b1ba2749939bb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7351204, g: 0.50614095, b: 0.8867924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

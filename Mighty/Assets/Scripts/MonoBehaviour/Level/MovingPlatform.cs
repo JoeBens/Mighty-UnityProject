@@ -7,6 +7,9 @@ public class MovingPlatform : MonoBehaviour {
     private Vector3 posA;
     private Vector3 posB;
 
+    private float waitTime;
+    public float startWaitTime;
+
     private Vector3 nextPos;
 
     [SerializeField]
@@ -39,9 +42,19 @@ public class MovingPlatform : MonoBehaviour {
     {
         childTransformA.localPosition = Vector3.MoveTowards(childTransformA.localPosition, nextPos, speed * Time.deltaTime);
 
-        if (Vector3.Distance(childTransformA.localPosition, nextPos) <= 0.1)
+        if (Vector3.Distance(childTransformA.localPosition, nextPos) <= 0.2)
         {
-            MoveBack();
+
+            if (waitTime <= 0)
+            {
+                MoveBack();
+                waitTime = startWaitTime;
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
+            
         }
         
     }

@@ -6,7 +6,7 @@ public class Gem : MonoBehaviour {
 
     [SerializeField]
     private int value;
-
+    private bool taken = false;
     [SerializeField]
     private GameObject gemEffectPrefab, gemEffectPrefabT;
 
@@ -18,10 +18,11 @@ public class Gem : MonoBehaviour {
             GameObject effectT = Instantiate(gemEffectPrefabT, transform.position, transform.rotation);
             Destroy(effect, 0.5f);
             Destroy(effectT, 0.5f);
-            if (other.gameObject.GetComponent<PlayerStat>() != null)
+            if (other.gameObject.GetComponent<PlayerStat>() != null && taken == false)
             {
                 FindObjectOfType<AudioManager>().Play("CoinPickUp");
                 other.gameObject.GetComponent<PlayerStat>().howManyGems += this.value;
+                taken = true;
                 Destroy(this.gameObject);
             }
             

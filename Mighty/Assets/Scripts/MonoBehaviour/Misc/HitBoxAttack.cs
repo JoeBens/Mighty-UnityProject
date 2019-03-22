@@ -29,7 +29,7 @@ public class HitBoxAttack : MonoBehaviour {
                 if(this.gameObject.name== "SimpleAttackHitBox" || this.gameObject.name == "StrikeAttackHitBox")
                 {
                     GameObject effect = Instantiate(attackEffectPrefab, attackEffectPos.position, transform.rotation);
-                    Destroy(attackEffectPrefab, 0.5f);
+                    
                 }
                 
                 

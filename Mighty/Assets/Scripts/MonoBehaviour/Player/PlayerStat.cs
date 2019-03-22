@@ -10,15 +10,20 @@ public class PlayerStat : MonoBehaviour, IDamageable {
     [SerializeField]
     private GameObject bloodEffectPrefab;
 
+    public GameObject gameOverMenu;
 
-    [SerializeField]
-    private GameObject deathEffectPrefab;
 
     public int health;
 
     private Animator anim;
 
     public int howManyGems;
+
+    public int howManyKeys;
+
+
+
+    public bool isDead = false;
 
     public int Health{ get; set; }
     // Use this for initialization
@@ -27,12 +32,25 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         anim = this.GetComponent<Animator>();
         Health = health;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("OutOfScreen"))
+        if (other.gameObject.CompareTag("OutOfScreen"))
         {
             Health = -1;
+            
         }
+        if (other.gameObject.CompareTag("DoorKey"))
+        {
+            if(other.gameObject.GetComponent<KeyDoor>() != null)
+            {
+                other.gameObject.GetComponent<KeyDoor>().keysActivated += howManyKeys;
+                howManyKeys = 0;
+            }
+
+        }
+
+
+
     }
 
     public void TakeDamage(int damageAmount)
@@ -47,16 +65,6 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         Destroy(effect, 0.5f);
 
 
-
-        if (Health <= 0)
-        {
-            anim.SetTrigger("Death");
-            
-            StartCoroutine(WaitBeforePlayerRespawn());
-            
-
-        }
-
     }
 
 
@@ -69,21 +77,17 @@ public class PlayerStat : MonoBehaviour, IDamageable {
             Health = health;
         if (Health <= 0)
         {
+
             Health = 0;
-        }
             
+            anim.SetTrigger("Death");
+            //FindObjectOfType<AudioManager>().Play("PlayerDeath");
+            gameOverMenu.SetActive(true);
+            FindObjectOfType<GameManager>().PlayerIsDead();
+            
+
+        }
+
     }
 
-
-    IEnumerator WaitBeforePlayerRespawn()
-    {
-        Debug.Log("I'm here");
-        FindObjectOfType<AudioManager>().Play("PlayerDeath");
-        GameObject effect = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
-        Destroy(effect, 0.5f);
-        yield return new WaitForSeconds(1.0f);
-        FindObjectOfType<GameManager>().PlayerIsDead();
-        Destroy(this.gameObject, 1f);
-        
-    }
 }

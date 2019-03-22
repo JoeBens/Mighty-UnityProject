@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour {
     public static bool isPaused = false;
 
     public GameObject pauseMenuUI;
+    
 
     public CharacterController2D characterController;
     public PlayerMovement pm;
@@ -20,11 +21,12 @@ public class PauseMenu : MonoBehaviour {
     private void Start()
     {
         originalVolume = AudioListener.volume;
+        FindObjectOfType<GameManager>().cannotPause = false;
 
     }
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && CanPause() == true)
         {
             if (isPaused)
             {
@@ -63,11 +65,26 @@ public class PauseMenu : MonoBehaviour {
     public void LoadMenu()
     {
         Time.timeScale = 1f;
+        AudioListener.volume = originalVolume;
         FindObjectOfType<AudioManager>().Pause("Theme");
         SceneManager.LoadScene("Start Menu");
     }
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public bool CanPause()
+    {
+        if(FindObjectOfType<GameManager>().cannotPause == false)
+        {
+            return true;
+        }
+        else
+            return false;
     }
 }

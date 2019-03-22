@@ -58,7 +58,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  - name: Theme
+  - name: LevelOneTheme
     clip: {fileID: 8300000, guid: d82b48a875a0c194eaa47e9325c56794, type: 3}
     volume: 0.128
     pitch: 1
@@ -174,13 +174,13 @@ MonoBehaviour:
     loop: 0
   - name: CoinPickUp
     clip: {fileID: 8300000, guid: ab7526c990d33493ca9335cb9991f315, type: 3}
-    volume: 1
+    volume: 0.37
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: HealthPickUp
     clip: {fileID: 8300000, guid: 862f683419f8f498194b9bb97c661d75, type: 3}
-    volume: 1
+    volume: 0.584
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -226,3 +226,28 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: 7c81589dc171fe9499e75baa4c92e47c, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 31b2284e8ab3f244182080ca7da474b7, type: 3}
+    volume: 0.168
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: LevelCompleted
+    clip: {fileID: 8300000, guid: 5564ed991b56c1f4ea4308f79a6d985c, type: 3}
+    volume: 0.615
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: LevelTwoTheme
+    clip: {fileID: 8300000, guid: eee8c38d8ae952b4d8e6321d35f041bb, type: 3}
+    volume: 0.135
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  mainTheme: MainMenu

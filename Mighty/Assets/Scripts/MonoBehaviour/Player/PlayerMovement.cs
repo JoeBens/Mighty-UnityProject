@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
     private float moveInput = 0f; // l'input du joueur
 
     bool canJump = false; // la variable responsable du saut du joueur
-    bool canDash = false; // la variable responsable du dash du joueur
+    
 
 
     private PlayerAnimator playerAnim;
