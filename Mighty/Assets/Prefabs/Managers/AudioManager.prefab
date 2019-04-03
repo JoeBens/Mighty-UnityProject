@@ -250,4 +250,16 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: Key
+    clip: {fileID: 8300000, guid: d5367fcf781385441a8ee9326c15210c, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: KeyActivated
+    clip: {fileID: 8300000, guid: a4dc23583fb1dc84a89049f88b06efe8, type: 3}
+    volume: 0.37
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
   mainTheme: MainMenu

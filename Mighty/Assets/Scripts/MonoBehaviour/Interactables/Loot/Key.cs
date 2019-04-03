@@ -15,6 +15,7 @@ public class Key : MonoBehaviour {
             {
                 //FindObjectOfType<AudioManager>().Play("CoinPickUp");
                 other.gameObject.GetComponent<PlayerStat>().howManyKeys ++;
+                FindObjectOfType<AudioManager>().Play("Key");
                 taken = true;
                 Destroy(this.gameObject);
             }

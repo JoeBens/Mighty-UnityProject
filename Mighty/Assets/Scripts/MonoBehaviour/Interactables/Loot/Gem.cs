@@ -10,6 +10,14 @@ public class Gem : MonoBehaviour {
     [SerializeField]
     private GameObject gemEffectPrefab, gemEffectPrefabT;
 
+    private AudioSource aS;
+
+
+    private void Start()
+    {
+        aS = this.GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -20,10 +28,11 @@ public class Gem : MonoBehaviour {
             Destroy(effectT, 0.5f);
             if (other.gameObject.GetComponent<PlayerStat>() != null && taken == false)
             {
-                FindObjectOfType<AudioManager>().Play("CoinPickUp");
+                //FindObjectOfType<AudioManager>().Play("CoinPickUp");
+                aS.Play();
                 other.gameObject.GetComponent<PlayerStat>().howManyGems += this.value;
                 taken = true;
-                Destroy(this.gameObject);
+                Destroy(this.gameObject,0.5f);
             }
             
         }

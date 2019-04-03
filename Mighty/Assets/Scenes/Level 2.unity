@@ -9597,7 +9597,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337829639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2178874, y: 0.46587992, z: -12}
+  m_LocalPosition: {x: -0.21790457, y: 0.46587992, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2016585189}
@@ -12558,7 +12558,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492228329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.417927, y: -0.896399, z: -12}
+  m_LocalPosition: {x: 8.4196415, y: -0.8966708, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 921229567}
@@ -21683,6 +21683,10 @@ Prefab:
     - target: {fileID: 4197038862230658, guid: 97c60504c2756074890d8f76444e0a7a, type: 2}
       propertyPath: m_RootOrder
       value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718261848734724, guid: 97c60504c2756074890d8f76444e0a7a, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97c60504c2756074890d8f76444e0a7a, type: 2}
@@ -39362,7 +39366,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -15
 --- !u!4 &1589078668
 Transform:
   m_ObjectHideFlags: 0
@@ -46104,7 +46108,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
 --- !u!4 &1843785782
 Transform:
   m_ObjectHideFlags: 0
@@ -51244,7 +51248,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2120250146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 320.24, y: -24.48, z: 1.3359375}
+  m_LocalPosition: {x: 323.59, y: -24.48, z: 1.3359375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

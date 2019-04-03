@@ -44,6 +44,7 @@ public class PlayerStat : MonoBehaviour, IDamageable {
             if(other.gameObject.GetComponent<KeyDoor>() != null)
             {
                 other.gameObject.GetComponent<KeyDoor>().keysActivated += howManyKeys;
+                FindObjectOfType<AudioManager>().Play("KeyActivated");
                 howManyKeys = 0;
             }
 

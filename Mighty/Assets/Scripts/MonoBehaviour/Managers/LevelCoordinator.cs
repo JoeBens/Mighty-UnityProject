@@ -23,7 +23,7 @@ public class LevelCoordinator : MonoBehaviour {
 	void Update () {
 		if(hasStarted == true)
         {
-            FindObjectOfType<AudioManager>().PauseEverything();
+            FindObjectOfType<AudioManager>().StopEverything();
             FindObjectOfType<AudioManager>().Play(toPlay);
             Time.timeScale = 1f;
             hasStarted = false;
