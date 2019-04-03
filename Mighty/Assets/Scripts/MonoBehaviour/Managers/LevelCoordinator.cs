@@ -25,6 +25,7 @@ public class LevelCoordinator : MonoBehaviour {
         {
             FindObjectOfType<AudioManager>().PauseEverything();
             FindObjectOfType<AudioManager>().Play(toPlay);
+            Time.timeScale = 1f;
             hasStarted = false;
         }
 	}

@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<AudioManager>().PauseEverything();
         FindObjectOfType<AudioManager>().Play("LevelCompleted");
         completeLevelUI.SetActive(true);
-        Invoke("TimeFreeze", 1.5f);
+        //Invoke("TimeFreeze", 1.5f);
     }
 
 

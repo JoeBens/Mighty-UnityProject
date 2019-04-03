@@ -118,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948820438401858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 113.55336, y: 16.486853, z: 0.07081374}
+  m_LocalPosition: {x: 23.24, y: 4.099535, z: 0.07081374}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4533397503115448}
@@ -320,7 +320,7 @@ MonoBehaviour:
   groundCheckRadius: 0.431
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 459008
   edgeCheck: {fileID: 4805234981902600}
   wallCheck: {fileID: 4788512762515742}
   bloodEffectPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 2}
@@ -358,7 +358,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1392683929
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b896c4d00f83cd7448210d34c1c33209, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

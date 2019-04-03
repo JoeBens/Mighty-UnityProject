@@ -13,6 +13,7 @@ public class LevelLoader : MonoBehaviour {
 
     public void LoadLevel(int sceneIndex)
     {
+        FindObjectOfType<GameManager>().lastCheckpointPos = new Vector3(0, 0, 0);
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 	
