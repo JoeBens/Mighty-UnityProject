@@ -10,10 +10,16 @@ public class LevelLoader : MonoBehaviour {
 
     public Text progressText;
 
+    public bool checkGameManager = true;
+
 
     public void LoadLevel(int sceneIndex)
     {
-        FindObjectOfType<GameManager>().lastCheckpointPos = new Vector3(0, 0, 0);
+        if(checkGameManager == true)
+        {
+            FindObjectOfType<GameManager>().lastCheckpointPos = new Vector3(0, 0, 0);
+        }
+        
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 	

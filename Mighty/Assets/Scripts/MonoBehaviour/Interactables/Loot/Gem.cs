@@ -11,11 +11,16 @@ public class Gem : MonoBehaviour {
     private GameObject gemEffectPrefab, gemEffectPrefabT;
 
     private AudioSource aS;
+    private Collider2D _collider;
+    private SpriteRenderer sp;
 
 
     private void Start()
     {
         aS = this.GetComponent<AudioSource>();
+        _collider = this.GetComponent<Collider2D>();
+        sp = this.GetComponent<SpriteRenderer>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,8 +36,10 @@ public class Gem : MonoBehaviour {
                 //FindObjectOfType<AudioManager>().Play("CoinPickUp");
                 aS.Play();
                 other.gameObject.GetComponent<PlayerStat>().howManyGems += this.value;
+                _collider.enabled = false;
+                sp.enabled = false;
                 taken = true;
-                Destroy(this.gameObject,0.5f);
+                Destroy(this.gameObject,1f);
             }
             
         }

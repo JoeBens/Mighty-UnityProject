@@ -102,7 +102,7 @@ MonoBehaviour:
     loop: 1
   - name: PlayerFireBall
     clip: {fileID: 8300000, guid: 38b15757f7b2a4860a90c80a030049a3, type: 3}
-    volume: 0.13
+    volume: 0.057
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
     loop: 0
   - name: LevelTwoTheme
     clip: {fileID: 8300000, guid: eee8c38d8ae952b4d8e6321d35f041bb, type: 3}
-    volume: 0.356
+    volume: 0.247
     pitch: 1
     source: {fileID: 0}
     loop: 1

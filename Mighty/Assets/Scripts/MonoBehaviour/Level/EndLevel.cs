@@ -8,6 +8,8 @@ public class EndLevel : MonoBehaviour {
     public GameManager gameManager;
     public GameObject completeLevelUI;
 
+    public int levelUnlocked;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -17,6 +19,7 @@ public class EndLevel : MonoBehaviour {
             other.gameObject.GetComponent<CharacterController2D>().enabled = false;
             other.gameObject.GetComponent<PlayerMovement>().enabled = false;
             other.gameObject.GetComponent<PlayerCast>().enabled = false;
+            PlayerPrefs.SetInt("LevelPassed", levelUnlocked);
             CompleteLevel();
         }
     }
