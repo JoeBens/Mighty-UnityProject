@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlyingEnemy : MeleeEnemy,IDamageable{
+public class FlyingEnemy : Enemy,IDamageable{
 
 
     public int Health { get; set; }
@@ -46,9 +46,11 @@ public class FlyingEnemy : MeleeEnemy,IDamageable{
 
         if (Health <= 0)
         {
+            camRipple.RippleEffect();
             FindObjectOfType<AudioManager>().Play("FlyingEnemyDeath");
             GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(effectD, 2.5f);
+            
             SpawnGems();
             Destroy(this.gameObject, 0.3f);
 

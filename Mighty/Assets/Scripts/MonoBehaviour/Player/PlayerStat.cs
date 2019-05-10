@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using EZCameraShake;
 
 public class PlayerStat : MonoBehaviour, IDamageable {
 
@@ -20,8 +21,6 @@ public class PlayerStat : MonoBehaviour, IDamageable {
     public int howManyGems;
 
     public int howManyKeys;
-
-
 
     public bool isDead = false;
 
@@ -49,9 +48,6 @@ public class PlayerStat : MonoBehaviour, IDamageable {
             }
 
         }
-
-
-
     }
 
     public void TakeDamage(int damageAmount)
@@ -60,12 +56,10 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         Health -= damageAmount;
         anim.SetTrigger("Hurt");
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
-
+        
 
         GameObject effect = Instantiate(bloodEffectPrefab, transform.position, transform.rotation);
         Destroy(effect, 0.5f);
-
-
     }
 
 
@@ -80,13 +74,11 @@ public class PlayerStat : MonoBehaviour, IDamageable {
         {
 
             Health = 0;
-            
             anim.SetTrigger("Death");
+            Cursor.visible = true;
             //FindObjectOfType<AudioManager>().Play("PlayerDeath");
             gameOverMenu.SetActive(true);
             FindObjectOfType<GameManager>().PlayerIsDead();
-            
-
         }
 
     }

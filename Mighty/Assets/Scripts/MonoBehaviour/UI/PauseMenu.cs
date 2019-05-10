@@ -49,10 +49,12 @@ public class PauseMenu : MonoBehaviour {
         pm.enabled = true;
         pc.enabled = true;
         AudioListener.volume = originalVolume;
+        Cursor.visible = false;
 
     }
     public void Pause()
     {
+        Cursor.visible = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;

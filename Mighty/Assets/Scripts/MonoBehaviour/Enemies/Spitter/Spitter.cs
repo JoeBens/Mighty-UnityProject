@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spitter : MeleeEnemy, IDamageable
+public class Spitter : Enemy, IDamageable
 {
     public int Health { get; set; }
 
@@ -21,6 +21,7 @@ public class Spitter : MeleeEnemy, IDamageable
         Destroy(effect, 0.5f);
         if (Health <= 0)
         {
+            camRipple.RippleEffect();
             anim.SetTrigger("Death");
             GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(effectD, 1.5f);

@@ -17,14 +17,9 @@ public class PlayerMovement : MonoBehaviour {
 
     private float moveInput = 0f; // l'input du joueur
 
-    bool canJump = false; // la variable responsable du saut du joueur
-    
-
+    private bool canJump = false; // la variable responsable du saut du joueur
 
     private PlayerAnimator playerAnim;
-
-
-
 
     // Use this for initialization
     void Start () {
@@ -39,14 +34,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             return;
         }
-           
-
         // MoveIput = 1 si l'input est la flèche droite, -1 si l'input est la flèche gauche
         moveInput = Input.GetAxisRaw("Horizontal") * playerSpeed;
-
-
-      
-
         //Run animation
         playerAnim.Move(moveInput);
 
@@ -55,19 +44,21 @@ public class PlayerMovement : MonoBehaviour {
         {
             canJump = true;
             //l'animation "jump"
-            playerAnim.Jump(canJump);
+            if(characterController.jumpForce !=0)
+            {
+                playerAnim.Jump(canJump);
+            }
+            
             FindObjectOfType<AudioManager>().Play("PlayerJump");
         }
 
     }
-
     public void OnLanding()
     {
         //Cet evenement va arréter l'animation "Jump"
         playerAnim.Jump(false);
         
     }
-
 
 
     private void FixedUpdate() // on déplace le personnage sur FixedUpdate au lieu de Update parce que FixedUpdate va s'executer dans chaque frame fixe, càd elle est meilleure pour controler les RigidBody

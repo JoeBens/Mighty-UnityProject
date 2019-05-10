@@ -66,6 +66,7 @@ public class PlayerCast : MonoBehaviour {
     {
         FindObjectOfType<AudioManager>().Play("PlayerFireBall");
         Instantiate(fireBallPrefab, firePoint.position, firePoint.rotation);
+        
 
     }
 }

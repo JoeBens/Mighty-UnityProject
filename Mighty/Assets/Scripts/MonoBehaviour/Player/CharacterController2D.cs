@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float jumpForce = 400f;                            // la force ajoutée lorsque le joueur saute.
+	[SerializeField] public float jumpForce = 400f;                            // la force ajoutée lorsque le joueur saute.
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;	// Un variable allant de 0 à 0.3 qui est responsable de la fluidité du mouvement
 	[SerializeField] private LayerMask ground;                                  // Un masque déterminant le sol
     [SerializeField] private Transform groundCheck;                             // Un repère positionné aux pieds du personnage que l'on utilise pour vérifier si le joueur est en collision avec le sol.
@@ -45,7 +45,6 @@ public class CharacterController2D : MonoBehaviour
 
 
     }
-
     private void FixedUpdate() // une fonction prédéfinie qui est appelée dans chaque frame 
 	{
 		bool wasGrounded = isGrounded;
@@ -127,7 +126,6 @@ public class CharacterController2D : MonoBehaviour
         // Inverser le joueur
         transform.Rotate(0f, 180f, 0f);
 	}
-
 
     //un getter de la variable isGrounded
     public bool IsGrounded()

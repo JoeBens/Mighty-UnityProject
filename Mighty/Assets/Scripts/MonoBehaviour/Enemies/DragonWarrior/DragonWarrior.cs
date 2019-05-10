@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragonWarrior : MeleeEnemy, IDamageable
+public class DragonWarrior : Enemy, IDamageable
 {
     public int Health { get; set; }
     [SerializeField]
@@ -24,12 +24,15 @@ public class DragonWarrior : MeleeEnemy, IDamageable
         //Debug.Log("is Hit is true now");
         anim.SetTrigger("HURT");
         anim.SetBool("Done", false);
+        
 
         if (Health <= 0)
         {
+            camRipple.RippleEffect();
             anim.SetTrigger("Death");
             GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(effectD, 2.5f);
+            
             SpawnGems();
             Destroy(this.gameObject, 0.5f);
 

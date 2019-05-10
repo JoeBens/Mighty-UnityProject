@@ -59,20 +59,20 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: LevelOneTheme
-    clip: {fileID: 8300000, guid: d82b48a875a0c194eaa47e9325c56794, type: 3}
+    clip: {fileID: 8300000, guid: 6cae1b4daf0f2d245b26eaf306927080, type: 3}
     volume: 0.128
     pitch: 1
     source: {fileID: 0}
     loop: 1
   - name: PlayerAttackOne
     clip: {fileID: 8300000, guid: 8d76c4a7797e3994eb5a27a04876b1fe, type: 3}
-    volume: 0.339
+    volume: 0.18
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: PlayerAttackTwo
     clip: {fileID: 8300000, guid: 6c438cd8f403270478a157682bf24456, type: 3}
-    volume: 0.339
+    volume: 0.175
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -174,13 +174,13 @@ MonoBehaviour:
     loop: 0
   - name: CoinPickUp
     clip: {fileID: 8300000, guid: ab7526c990d33493ca9335cb9991f315, type: 3}
-    volume: 0.37
+    volume: 0.192
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: HealthPickUp
     clip: {fileID: 8300000, guid: 862f683419f8f498194b9bb97c661d75, type: 3}
-    volume: 0.584
+    volume: 0.256
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: MainMenu
-    clip: {fileID: 8300000, guid: 7c81589dc171fe9499e75baa4c92e47c, type: 3}
+    clip: {fileID: 8300000, guid: 5564ed991b56c1f4ea4308f79a6d985c, type: 3}
     volume: 0.4
     pitch: 1
     source: {fileID: 0}
@@ -262,4 +262,46 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: BossFight
+    clip: {fileID: 8300000, guid: 885083d8753a43540a5408f350e0b6bb, type: 3}
+    volume: 0.285
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: BossImpact
+    clip: {fileID: 8300000, guid: 9faac091f36475842b84ff56fa859c3b, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BossCelebration
+    clip: {fileID: 8300000, guid: b94c35dd2c65a194dbbc0b8db3416570, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BossDeathBuildUp
+    clip: {fileID: 8300000, guid: 1a5212dc2803c1a4daf3f96b836029a6, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BossDeath
+    clip: {fileID: 8300000, guid: 88b3d4a1d3de46a46a22fc31da12b755, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Tutorial
+    clip: {fileID: 8300000, guid: 0514bdbb336030847a8b5ead0a65c606, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Story
+    clip: {fileID: 8300000, guid: 0514bdbb336030847a8b5ead0a65c606, type: 3}
+    volume: 0.102
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
   mainTheme: MainMenu

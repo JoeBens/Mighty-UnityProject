@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chomper : MeleeEnemy,IDamageable {
+public class Chomper : Enemy,IDamageable {
 
     public int Health { get; set; }
     [SerializeField]
@@ -28,9 +28,11 @@ public class Chomper : MeleeEnemy,IDamageable {
 
         if (Health <= 0)
         {
+            camRipple.RippleEffect();
             anim.SetTrigger("Death");
             GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(effectD, 3.5f);
+            
             FindObjectOfType<AudioManager>().Play("ChomperDeath");
             SpawnGems();
             Destroy(this.gameObject, 1f);

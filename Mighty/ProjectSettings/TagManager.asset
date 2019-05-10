@@ -16,6 +16,10 @@ TagManager:
   - GameOver
   - FollowBG
   - DoorKey
+  - Ground
+  - Impact
+  - BossKiller
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -41,8 +45,8 @@ TagManager:
   - GM
   - CameraBorder
   - Background
-  - 
-  - 
+  - Boss
+  - Tuto
   - 
   - 
   - 

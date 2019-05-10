@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class KnockBackPlayer : MonoBehaviour {
 
     [SerializeField]
@@ -13,6 +14,7 @@ public class KnockBackPlayer : MonoBehaviour {
 
     private bool canDamage=true;
 
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +32,7 @@ public class KnockBackPlayer : MonoBehaviour {
                 collision.GetComponent<Animator>().SetTrigger("Dizzy");
                 StartCoroutine(ResetKnockBack());
                 FindObjectOfType<AudioManager>().Play("PlayerKnocked");
-
+                
                 IDamageable hit = collision.GetComponent<IDamageable>();
 
                 if (hit != null)

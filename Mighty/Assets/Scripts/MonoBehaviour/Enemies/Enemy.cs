@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MeleeEnemy : MonoBehaviour {
+public abstract class Enemy : MonoBehaviour {
 
     [SerializeField]
     protected int health, coins;
@@ -39,10 +39,13 @@ public abstract class MeleeEnemy : MonoBehaviour {
     protected bool wereGoingRight;
 
 
+    public RipplePostProcessor camRipple;
+
     public virtual void Init()
     {
         anim = GetComponentInChildren<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        camRipple = Camera.main.GetComponent<RipplePostProcessor>();
     }
     public virtual void Start()
     {

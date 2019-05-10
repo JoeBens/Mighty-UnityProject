@@ -14,6 +14,7 @@ public class EndLevel : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Cursor.visible = true;
             other.gameObject.GetComponent<Animator>().SetTrigger("LevelFinished");
             other.gameObject.GetComponent<PlayerAttack>().enabled = false;
             other.gameObject.GetComponent<CharacterController2D>().enabled = false;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MotoEnemy : MeleeEnemy, IDamageable
+public class MotoEnemy : Enemy, IDamageable
 {
     public int Health { get; set; }
 
@@ -59,6 +59,7 @@ public class MotoEnemy : MeleeEnemy, IDamageable
         Destroy(effect, 0.5f);
         if (Health <= 0)
         {
+            camRipple.RippleEffect();
             GameObject effectD = Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(effectD, 2.5f);
             SpawnGems();
