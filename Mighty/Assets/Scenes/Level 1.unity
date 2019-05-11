@@ -22501,7 +22501,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520928409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -518.24695, y: -5.7157845, z: -12.025}
+  m_LocalPosition: {x: -518.24677, y: -5.7157845, z: -12.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2067321835}
@@ -78951,6 +78951,7 @@ GameObject:
   - component: {fileID: 1639877955}
   - component: {fileID: 1639877956}
   - component: {fileID: 1639877954}
+  - component: {fileID: 1639877957}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -79023,6 +79024,18 @@ MonoBehaviour:
   RippleMaterial: {fileID: 2100000, guid: 54caf100ad7c4dc4682f521b4e335d97, type: 2}
   MaxAmount: 10
   Friction: 0.9
+--- !u!114 &1639877957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1639877953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: a4e0e8198fe264045bb283ed41f6bef7, type: 2}
 --- !u!81 &1639877958
 AudioListener:
   m_ObjectHideFlags: 0
@@ -79084,7 +79097,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1639877953}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -504.18057, y: -5.6438622, z: -12.025}
+  m_LocalPosition: {x: -504.1941, y: -5.643928, z: -12.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 967119362}

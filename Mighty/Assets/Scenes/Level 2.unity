@@ -11886,7 +11886,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337829639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21798992, y: 0.46587992, z: -12}
+  m_LocalPosition: {x: -0.2178545, y: 0.46587992, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2016585189}
@@ -15253,6 +15253,7 @@ GameObject:
   - component: {fileID: 492228332}
   - component: {fileID: 492228336}
   - component: {fileID: 492228331}
+  - component: {fileID: 492228337}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15267,7 +15268,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492228329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.427966, y: -0.89799833, z: -12}
+  m_LocalPosition: {x: 8.414772, y: -0.8958955, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 921229567}
@@ -15395,6 +15396,18 @@ MonoBehaviour:
   RippleMaterial: {fileID: 2100000, guid: 54caf100ad7c4dc4682f521b4e335d97, type: 2}
   MaxAmount: 10
   Friction: 0.9
+--- !u!114 &492228337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492228329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 37f29b2ac6e60f74d9dd64bcea087ed0, type: 2}
 --- !u!1001 &497867861
 Prefab:
   m_ObjectHideFlags: 0

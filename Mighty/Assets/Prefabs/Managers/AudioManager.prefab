@@ -174,13 +174,13 @@ MonoBehaviour:
     loop: 0
   - name: CoinPickUp
     clip: {fileID: 8300000, guid: ab7526c990d33493ca9335cb9991f315, type: 3}
-    volume: 0.192
+    volume: 0.077
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: HealthPickUp
     clip: {fileID: 8300000, guid: 862f683419f8f498194b9bb97c661d75, type: 3}
-    volume: 0.256
+    volume: 0.195
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     loop: 0
   - name: Mushroom
     clip: {fileID: 8300000, guid: eb511d941117b4025a498881f8db3140, type: 3}
-    volume: 1
+    volume: 0.411
     pitch: 1
     source: {fileID: 0}
     loop: 0
